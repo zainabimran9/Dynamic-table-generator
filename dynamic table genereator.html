@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>JS Practice UI</title>
+</head>
+<body class="bg-gray-100 p-10 flex justify-center">
+
+  <div class="bg-white p-6 rounded-xl shadow-lg w-96">
+
+    <h2 class="text-xl font-semibold mb-2">Multiplication Table</h2>
+
+    <input 
+      type="number" 
+      id="number" 
+      placeholder="Enter a number"
+      class="w-full p-2 border border-gray-300 rounded mb-3"
+    >
+
+    <button 
+      onclick="Generate()" 
+      class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
+    >
+      Generate Table
+    </button>
+
+    <div id="tableResult" class="bg-gray-50 p-3 rounded mt-3 min-h-10"></div>
+
+    <hr class="my-6">
+
+    <h2 class="text-xl font-semibold mb-2">Add Text to List</h2>
+
+    <input 
+      type="text" 
+      id="para" 
+      placeholder="Write something"
+      class="w-full p-2 border border-gray-300 rounded mb-3"
+    >
+
+    <button 
+      onclick="hello()" 
+      class="w-full bg-green-600 text-white p-2 rounded hover:bg-green-700"
+    >
+      Add to List
+    </button>
+
+    <div id="div" class="bg-gray-50 p-3 rounded mt-3 min-h-10"></div>
+
+  </div>
+
+  <!-- IMPORTANT: Load JS at the end -->
+  <script src="app.js"></script>
+</body>
+</html>
